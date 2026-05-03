@@ -20,9 +20,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	DoctorService_CreateDoctor_FullMethodName = "/proto.DoctorService/CreateDoctor"
-	DoctorService_GetDoctor_FullMethodName    = "/proto.DoctorService/GetDoctor"
-	DoctorService_ListDoctors_FullMethodName  = "/proto.DoctorService/ListDoctors"
+	DoctorService_CreateDoctor_FullMethodName = "/doctor.DoctorService/CreateDoctor"
+	DoctorService_GetDoctor_FullMethodName    = "/doctor.DoctorService/GetDoctor"
+	DoctorService_ListDoctors_FullMethodName  = "/doctor.DoctorService/ListDoctors"
 )
 
 // DoctorServiceClient is the client API for DoctorService service.
