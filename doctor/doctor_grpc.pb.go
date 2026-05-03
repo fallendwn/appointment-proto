@@ -177,7 +177,7 @@ func _DoctorService_ListDoctors_Handler(srv interface{}, ctx context.Context, de
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var DoctorService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "doctor.DoctorService",
+	ServiceName: "proto.DoctorService",
 	HandlerType: (*DoctorServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
