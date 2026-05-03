@@ -2,13 +2,12 @@
 // versions:
 // - protoc-gen-go-grpc v1.6.1
 // - protoc             v7.34.1
-// source: doctor-service/internal/proto/doctor.proto
+// source: proto/doctor.proto
 
-package doctor_service
+package doctorpb
 
 import (
 	context "context"
-
 	grpc "google.golang.org/grpc"
 	codes "google.golang.org/grpc/codes"
 	status "google.golang.org/grpc/status"
@@ -20,9 +19,9 @@ import (
 const _ = grpc.SupportPackageIsVersion9
 
 const (
-	DoctorService_CreateDoctor_FullMethodName = "/proto.DoctorService/CreateDoctor"
-	DoctorService_GetDoctor_FullMethodName    = "/proto.DoctorService/GetDoctor"
-	DoctorService_ListDoctors_FullMethodName  = "/proto.DoctorService/ListDoctors"
+	DoctorService_CreateDoctor_FullMethodName = "/doctor.DoctorService/CreateDoctor"
+	DoctorService_GetDoctor_FullMethodName    = "/doctor.DoctorService/GetDoctor"
+	DoctorService_ListDoctors_FullMethodName  = "/doctor.DoctorService/ListDoctors"
 )
 
 // DoctorServiceClient is the client API for DoctorService service.
@@ -177,7 +176,7 @@ func _DoctorService_ListDoctors_Handler(srv interface{}, ctx context.Context, de
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)
 var DoctorService_ServiceDesc = grpc.ServiceDesc{
-	ServiceName: "proto.DoctorService",
+	ServiceName: "doctor.DoctorService",
 	HandlerType: (*DoctorServiceServer)(nil),
 	Methods: []grpc.MethodDesc{
 		{
@@ -194,5 +193,5 @@ var DoctorService_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "doctor-service/internal/proto/doctor.proto",
+	Metadata: "proto/doctor.proto",
 }
